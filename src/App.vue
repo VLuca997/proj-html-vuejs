@@ -3,6 +3,7 @@
 import HeaderComponent from './components/HeaderComponent.vue';
 import MainComponent from './components/MainComponent.vue';
 import FooterComponent from './components/FooterComponent.vue';
+import MainS2Component from './components/MainS2Component.vue';
 import axios from 'axios';
 
 // my-component.js
@@ -11,7 +12,7 @@ export default {
     return 
   },
   components:{
-    HeaderComponent, MainComponent, FooterComponent
+    HeaderComponent, MainComponent, FooterComponent, MainS2Component
   }
 }
 </script>
@@ -19,6 +20,7 @@ export default {
 <template>
     <HeaderComponent />
     <MainComponent/>
+    <MainS2Component/>
     <FooterComponent />
 </template>
 
