@@ -55,9 +55,7 @@ export default {
             font-size: 4rem;
         }
     }
-    .team-1{
-            justify-self: start;
-        }
+    
     
     .times-play-game > *{
         padding: 0px 20px;

@@ -98,10 +98,10 @@ export default {
             display: flex;
             justify-content: center;
             position: relative;
-            *:not(.my-container){
-                z-index: 1;
-                position: absolute;
-            }
+                *:not(.my-container){
+                    z-index: 1;
+                    position: absolute;
+                }
         }
         .sponsor{
             z-index: 1;

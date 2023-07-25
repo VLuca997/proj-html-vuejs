@@ -4,6 +4,8 @@ import HeaderComponent from './components/HeaderComponent.vue';
 import MainComponent from './components/MainComponent.vue';
 import FooterComponent from './components/FooterComponent.vue';
 import MainS2Component from './components/MainS2Component.vue';
+import PlayerTeamComponent from './components/PlayerTeamComponent.vue';
+
 import axios from 'axios';
 
 // my-component.js
@@ -12,7 +14,7 @@ export default {
     return 
   },
   components:{
-    HeaderComponent, MainComponent, FooterComponent, MainS2Component
+    HeaderComponent, MainComponent, FooterComponent, MainS2Component,PlayerTeamComponent
   }
 }
 </script>
@@ -21,6 +23,7 @@ export default {
     <HeaderComponent />
     <MainComponent/>
     <MainS2Component/>
+    <PlayerTeamComponent/>
     <FooterComponent />
 </template>
 
