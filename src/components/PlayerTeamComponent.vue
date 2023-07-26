@@ -9,7 +9,7 @@ export default {
 
 <template >
     <div class="player-container">
-        <h2 class="text-center text-light fw-bold p-3 mb-4">Players</h2>
+        <h2 class="text-center text-light fw-bold py-5">Players</h2>
 
         <div class="card-conteiner d-flex justify-content-around">
             <div class="pb-4 my-card">

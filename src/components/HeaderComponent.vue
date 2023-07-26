@@ -118,11 +118,11 @@ export default {
                 color: white;
         }
         .header-container{
-            width: 100vw;
             height: 100vh;
             background-image: url(../assets/img/slider2-1.jpg);
             background-position: center;
             background-size: cover;
+            object-fit: cover;
             
         
         }
