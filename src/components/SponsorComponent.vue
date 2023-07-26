@@ -23,9 +23,14 @@ export default {
 
         </div>
     </div>
-    <div>
-        <img src="../assets/img/" alt="">
+    <div class="pollice d-flex justify-content-center py-5 ">
+        <img src="../assets/img/POLLICE.png" class="bg-black img-fluid text-light" alt="">
     </div>
+    <div class="text-center">
+        <h4 class="fw-bold text-black fs-1">RESENTE NEW & ARTICLES</h4>
+        <p class="text-grey">Be aware of the football world.</p>
+    </div>
+
 </template>
 
 <style lang="scss" scoped >
@@ -49,6 +54,11 @@ export default {
             border: 3px solid white;
             border-radius: 30px;
         }
+    }
+    .pollice{
+        height: 300px;
+        background-position: center;
+        background-size: cover;
     }
 
 </style>

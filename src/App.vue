@@ -7,7 +7,7 @@ import MainS2Component from './components/MainS2Component.vue';
 import PlayerTeamComponent from './components/PlayerTeamComponent.vue';
 import TableLeague from './components/TableLeague.vue';
 import SponsorComponent from './components/SponsorComponent.vue';
-
+import InfoComponent from './components/InfoComponent.vue';
 
 
 import axios from 'axios';
@@ -18,7 +18,7 @@ export default {
     return 
   },
   components:{
-    HeaderComponent, MainComponent, FooterComponent, MainS2Component,PlayerTeamComponent,TableLeague,SponsorComponent
+    HeaderComponent, MainComponent, FooterComponent, MainS2Component,PlayerTeamComponent,TableLeague,SponsorComponent,InfoComponent
   }
 }
 </script>
@@ -30,6 +30,7 @@ export default {
     <PlayerTeamComponent/>
     <TableLeague/>
     <SponsorComponent/>
+    <InfoComponent/>
     <FooterComponent />
 </template>
 

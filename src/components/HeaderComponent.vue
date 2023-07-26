@@ -92,7 +92,7 @@ export default {
 
 </template>
 
-<style lang="scss" >
+<style lang="scss" scoped>
         // HEADER-TOP CONTENT
         .logo{
             display: flex;

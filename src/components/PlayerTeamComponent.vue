@@ -60,13 +60,13 @@ export default {
         </div>
         
         <div class="my-component-button d-flex justify-content-center py-5">
-            <button type="button" class="my-btn btn text-center rounded-5 text-light"><p>View All Player</p></button>
+            <button type="button" class="my-btn btn text-center rounded-5 text-light"><p class="py-3">View All Player</p></button>
         </div>
     </div>
     
 </template>
 
-<style lang="scss" >
+<style lang="scss" scoped >
     .my-card{
     }
     .card{
