@@ -5,6 +5,7 @@ export const store = reactive({
         TeamMatches:[
             {
                 id:1,
+                
                 timing:{
                     timestamp: 'October 20,2022 17:00 pm'
                 },
@@ -71,7 +72,7 @@ export const store = reactive({
                 stadium: 'Expert Stadium',
                 homeTeam:{
                     img: "./src/assets/img/club-1.png",
-                    name: 'Instanbul Club'
+                    name: 'Instanbul Sports'
                 },
                 awayteam:{
                     img: "./src/assets/img/club-2.png",
@@ -80,5 +81,103 @@ export const store = reactive({
             },
             
         ],
+
+
+        versus:[
+            {
+                homeTeam:{
+                    img: "./src/assets/img/club-1.png",
+                    name: 'Instanbul Sports'
+                },
+                awayteam:{
+                    img: "./src/assets/img/club-2.png",
+                    name: 'United Fs Club'
+                }
+            },
+            {
+                homeTeam:{
+                    img: "./src/assets/img/club-3.png",
+                    name: 'Shalke Club'
+                },
+                awayteam:{
+                    img: "./src/assets/img/club-4.png",
+                    name: 'Inter Club'
+                }
+            },
+            {
+                homeTeam:{
+                    img: "./src/assets/img/league-club-5.png",
+                    name: 'Madrid Club'
+                },
+                awayteam:{
+                    img: "./src/assets/img/club-6.png",
+                    name: 'Shalked Club'
+                }
+            },
+            {
+                homeTeam:{
+                    img: "./src/assets/img/club-7.png",
+                    name: 'Arsenal Club'
+                },
+                awayteam:{
+                    img: "./src/assets/img/club-8.png",
+                    name: 'Bayern Club'
+                }
+            },
+            {
+                homeTeam:{
+                    img: "./src/assets/img/club-9.png",
+                    name: 'Atletico Club'
+                },
+                awayteam:{
+                    img: "./src/assets/img/club-1.png",
+                    name: 'Instanbul Sports'
+                }
+            },
+            {
+                homeTeam:{
+                    img: "./src/assets/img/club-2.png",
+                    name: 'United Fs Club'
+                },
+                awayteam:{
+                    img: "./src/assets/img/club-3.png",
+                    name: 'Shalke Club'
+                }
+            },
+            {
+                homeTeam:{
+                    img: "./src/assets/img/club-4.png",
+                    name: 'Inter Club'
+                },
+                awayteam:{
+                    img: "./src/assets/img/league-club-5.png",
+                    name: 'Madrid Club'
+                }
+            },
+            {
+                homeTeam:{
+                    img: "./src/assets/img/club-6.png",
+                    name: 'Shalked Club'
+                },
+                awayteam:{
+                    img: "./src/assets/img/club-7.png",
+                    name: 'Arsenal Club'
+                }
+            },
+            {
+                homeTeam:{
+                    img: "./src/assets/img/club-8.png",
+                    name: 'Bayern Club'
+                },
+                awayteam:{
+                    img: "./src/assets/img/club-9.png",
+                    name: 'Atletico Club'
+                }
+            },
+        ],
+
+
+
+        
 
 });
