@@ -1,125 +1,43 @@
 <script>
+import { store } from '../store';//IMPORTO STORE.JS CON "DESTRUCTURING"
+
+// my-component.js
+export default {
+    data() {
+        return {
+            store,
+            
+
+        }
+    },
+}
 </script>
 <template>
     <div class="general-container text-light fw-bold pb-5">
 
         <h2 class="text-center py-5">Upcoming Matches</h2>
 
-        <div class="px-4 py-3 container-matches">
+        <div v-for="(matches, i) in store.TeamMatches" :key="i" class="px-4 py-3 container-matches">
             <div class="card-matches d-flex justify-content-center p-0">
                 <div class="home d-flex">
-                    <span><img src="../assets/img/club-3.png" alt=""></span>
-                    <p>TEAM1</p>
+                    <span><img :src="matches.homeTeam.img" alt=""></span>
+                    <p>{{matches.homeTeam.name}}</p>
                 </div>
                 <div class="versus d-flex">
                     <p>VS</p>
                 </div>
                 <div class="transfert d-flex">
-                    <p class="">TEAM2</p>
-                    <img src="../assets/img/club-4.png" alt="">
+                    <p class="">{{matches.awayteam.name}}</p>
+                    <img :src="matches.awayteam.img" alt="">
                 </div>
             </div>
             <div>
                 <div class="times-play-game d-flex justify-content-center">
-                    <p class=""><i class="fa-regular fa-calendar px-2"></i>May 21,2022, 18:05 pm</p>
-                    <p class=""><i class="fa-solid fa-plus px-2"></i> Espert Stadium</p>
+                    <p class=""><i class="fa-regular fa-calendar px-2"></i>{{matches.timing.timestamp}}</p>
+                    <p class=""><i class="fa-solid fa-plus px-2"></i> {{matches.stadium}}</p>
                 </div>
             </div>
         </div>
-
-
-        <div class="px-4 py-3 container-matches">
-            <div class="card-matches d-flex justify-content-center p-0">
-                <div class="home d-flex">
-                    <span><img src="../assets/img/club-3.png" alt=""></span>
-                    <p>TEAM1</p>
-                </div>
-                <div class="versus d-flex">
-                    <p>VS</p>
-                </div>
-                <div class="transfert d-flex">
-                    <p class="">TEAM2</p>
-                    <img src="../assets/img/club-4.png" alt="">
-                </div>
-            </div>
-            <div>
-                <div class="times-play-game d-flex justify-content-center">
-                    <p class=""><i class="fa-regular fa-calendar px-2"></i>May 21,2022, 18:05 pm</p>
-                    <p class=""><i class="fa-solid fa-plus px-2"></i> Espert Stadium</p>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="px-4 py-3 container-matches">
-            <div class="card-matches d-flex justify-content-center p-0">
-                <div class="home d-flex">
-                    <span><img src="../assets/img/club-3.png" alt=""></span>
-                    <p>TEAM1</p>
-                </div>
-                <div class="versus d-flex">
-                    <p>VS</p>
-                </div>
-                <div class="transfert d-flex">
-                    <p class="">TEAM2</p>
-                    <img src="../assets/img/club-4.png" alt="">
-                </div>
-            </div>
-            <div>
-                <div class="times-play-game d-flex justify-content-center">
-                    <p class=""><i class="fa-regular fa-calendar px-2"></i>May 21,2022, 18:05 pm</p>
-                    <p class=""><i class="fa-solid fa-plus px-2"></i> Espert Stadium</p>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="px-4 py-3 container-matches">
-            <div class="card-matches d-flex justify-content-center p-0">
-                <div class="home d-flex">
-                    <span><img src="../assets/img/club-3.png" alt=""></span>
-                    <p>TEAM1</p>
-                </div>
-                <div class="versus d-flex">
-                    <p>VS</p>
-                </div>
-                <div class="transfert d-flex">
-                    <p class="">TEAM2</p>
-                    <img src="../assets/img/club-4.png" alt="">
-                </div>
-            </div>
-            <div>
-                <div class="times-play-game d-flex justify-content-center">
-                    <p class=""><i class="fa-regular fa-calendar px-2"></i>May 21,2022, 18:05 pm</p>
-                    <p class=""><i class="fa-solid fa-plus px-2"></i> Espert Stadium</p>
-                </div>
-            </div>
-        </div>
-
-        
-        <div class="px-4 py-3 container-matches">
-            <div class="card-matches d-flex justify-content-center p-0">
-                <div class="home d-flex">
-                    <span><img src="../assets/img/club-3.png" alt=""></span>
-                    <p>TEAM1</p>
-                </div>
-                <div class="versus d-flex">
-                    <p>VS</p>
-                </div>
-                <div class="transfert d-flex">
-                    <p class="">TEAM2</p>
-                    <img src="../assets/img/club-4.png" alt="">
-                </div>
-            </div>
-            <div>
-                <div class="times-play-game d-flex justify-content-center">
-                    <p class=""><i class="fa-regular fa-calendar px-2"></i>May 21,2022, 18:05 pm</p>
-                    <p class=""><i class="fa-solid fa-plus px-2"></i> Espert Stadium</p>
-                </div>
-            </div>
-        </div>
-
-
 
     </div>
 </template>

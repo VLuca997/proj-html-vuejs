@@ -2,7 +2,18 @@
 // my-component.js
 export default {
     data() {
-        return 
+        return {
+            
+            navItems: [
+                { text: "HOME", link: "#" },
+                { text: "FIXTURE & RESULT", link: "#" },
+                { text: "LEAGUE TABLE", link: "#" },
+                { text: "PLAYERS", link: "#" },
+                { text: "GALLERY", link: "#" },
+                { text: "BLOG", link: "#" },
+                { text: "CONTACT", link: "#" },
+            ]
+        }
     },
 }
 </script>
@@ -39,28 +50,11 @@ export default {
             <div class="nav-bottom d-flex justify-content-center ">
                 <div class="content-navbar">
                     <ul class="nav nav-underline text-light pb-2">
-                        <!-- NAVBAR HEADER BOTTOM -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">HOME</a>
+                        <!-- NAVBAR HEADER BOTTOM  reattivo con v-for {{ navItem }} -->
+                        <li v-for="(navItem, i) in navItems" :key="i.text" class="nav-item">
+                            <a class="nav-link" href="i">{{navItem.text}}</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">FIXTURES & RESULT</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">LEAGUE TABLE</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">PLAYERS</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">GALLERY</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">BLOG</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">CONTACT</a>
-                        </li>
+                        
                         <!-- --------------------------------------------------- -->
                     </ul>
                 </div>
