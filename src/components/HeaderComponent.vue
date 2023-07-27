@@ -4,45 +4,12 @@ export default {
     data() {
         return {
             
-            navBarItems: [
-                { 
-                    text: "HOME", 
-                    link: "#",
-                    id: 'Quick-Links'
-                },
-                { 
-                    text: "FIXTURE & RESULT",
-                    link: "#",
-                    id: 'Education'
-                },
-                { 
-                    text: "LEAGUE TABLE",
-                    link: "#",
-                    id: 'Education'
-                },
-                {   
-                    text: "PLAYERS", 
-                    link: "#",
-                    id: 'Education'
-                },
-                { 
-                    text: "GALLERY",
-                    link: "#",
-                    id: 'Education Quick-Links'
-                },
-                { 
-                    text: "BLOG", 
-                    link: "#",
-                    id: 'Quick-Links'
-                },
-                { 
-                    text: "CONTACT", 
-                    link: "#",
-                    id: 'Quick-Links'
-                },
-            ]
+        
         }
     },
+    props:{
+        navBarItems: Array,
+    }
 }
 </script>
 
@@ -79,7 +46,7 @@ export default {
                 <div class="content-navbar">
                     <ul class="nav nav-underline text-light pb-2">
                         <!-- NAVBAR HEADER BOTTOM  reattivo con v-for {{ navItem }} -->
-                        <li v-for="(navBarItems, i) in navBarItemss" :key="i.text" class="nav-item">
+                        <li v-for="(navBarItems, i) in navBarItems" :key="i.text" class="nav-item">
                             <a class="nav-link" href="i">{{navBarItems.text}}</a>
                         </li>
                         

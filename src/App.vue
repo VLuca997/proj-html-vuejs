@@ -18,6 +18,43 @@ export default {
   data() {
     return {
       store,
+      navBarItems: [
+                { 
+                    text: "HOME", 
+                    link: "#",
+                    id: 'Quick-Links'
+                },
+                { 
+                    text: "FIXTURE & RESULT",
+                    link: "#",
+                    id: 'Education'
+                },
+                { 
+                    text: "LEAGUE TABLE",
+                    link: "#",
+                    id: 'Education'
+                },
+                {   
+                    text: "PLAYERS", 
+                    link: "#",
+                    id: 'Education'
+                },
+                { 
+                    text: "GALLERY",
+                    link: "#",
+                    id: 'Education Quick-Links'
+                },
+                { 
+                    text: "BLOG", 
+                    link: "#",
+                    id: 'Quick-Links'
+                },
+                { 
+                    text: "CONTACT", 
+                    link: "#",
+                    id: 'Quick-Links'
+                },
+            ]
     }
   },
   components:{
@@ -27,14 +64,14 @@ export default {
 </script>
 
 <template>
-    <HeaderComponent />
+    <HeaderComponent :navBarItems="navBarItems" />
     <MainComponent/>
     <MainS2Component/>
     <PlayerTeamComponent/>
     <TableLeague/>
     <SponsorComponent/>
     <InfoComponent/>
-    <FooterComponent />
+    <FooterComponent :navBarItems="navBarItems"/>
 </template>
 
 <style lang="scss">
