@@ -80,6 +80,7 @@ export const store = reactive({
                 }
             },
             
+            
         ],
 
 
@@ -175,7 +176,34 @@ export const store = reactive({
                 }
             },
         ],
-
+        //InfoComponent
+        ads:[
+            {
+                name: 'What is Football?',
+                description: 'Football is a sport that is know as a ball game and is loved by [...]',
+                img: './src/assets/img/news1-1-300x300.png',
+                times: '29.05.2022 - Football'
+            },
+            {
+                name: 'Football Rules',
+                description: 'Football is a sport that is know as a ball game and is loved by [...]',
+                img: './src/assets/img/news2-1-300x300.png',
+                times: '29.05.2022 - Football'
+            },
+            {
+                name: 'Football Features',
+                description: 'Football is a sport that is know as a ball game and is loved by [...]',
+                img: './src/assets/img/news3-1-300x300.png',
+                times: '29.05.2022 - Football'
+            },
+            {
+                name: 'Football Terms',
+                description: 'Football is a sport that is know as a ball game and is loved by [...]',
+                img: './src/assets/img/news4-1-300x300.png',
+                times: '29.05.2022 - Football'
+            },
+            
+        ]
 
 
         

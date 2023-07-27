@@ -4,14 +4,42 @@ export default {
     data() {
         return {
             
-            navItems: [
-                { text: "HOME", link: "#" },
-                { text: "FIXTURE & RESULT", link: "#" },
-                { text: "LEAGUE TABLE", link: "#" },
-                { text: "PLAYERS", link: "#" },
-                { text: "GALLERY", link: "#" },
-                { text: "BLOG", link: "#" },
-                { text: "CONTACT", link: "#" },
+            navBarItems: [
+                { 
+                    text: "HOME", 
+                    link: "#",
+                    id: 'Quick-Links'
+                },
+                { 
+                    text: "FIXTURE & RESULT",
+                    link: "#",
+                    id: 'Education'
+                },
+                { 
+                    text: "LEAGUE TABLE",
+                    link: "#",
+                    id: 'Education'
+                },
+                {   
+                    text: "PLAYERS", 
+                    link: "#",
+                    id: 'Education'
+                },
+                { 
+                    text: "GALLERY",
+                    link: "#",
+                    id: 'Education Quick-Links'
+                },
+                { 
+                    text: "BLOG", 
+                    link: "#",
+                    id: 'Quick-Links'
+                },
+                { 
+                    text: "CONTACT", 
+                    link: "#",
+                    id: 'Quick-Links'
+                },
             ]
         }
     },
@@ -51,8 +79,8 @@ export default {
                 <div class="content-navbar">
                     <ul class="nav nav-underline text-light pb-2">
                         <!-- NAVBAR HEADER BOTTOM  reattivo con v-for {{ navItem }} -->
-                        <li v-for="(navItem, i) in navItems" :key="i.text" class="nav-item">
-                            <a class="nav-link" href="i">{{navItem.text}}</a>
+                        <li v-for="(navBarItems, i) in navBarItemss" :key="i.text" class="nav-item">
+                            <a class="nav-link" href="i">{{navBarItems.text}}</a>
                         </li>
                         
                         <!-- --------------------------------------------------- -->

@@ -1,8 +1,12 @@
 <script>
+import { store } from '../store';//IMPORTO STORE.JS CON "DESTRUCTURING"
+
 // my-component.js
 export default {
     data() {
-        return 
+        return {
+            store,
+        }
     },
 }
 </script>
@@ -11,13 +15,13 @@ export default {
 <template>
 
     <div class="info-container d-flex justify-content-center py-5">
-        <div class="card">
+        <div class="card" v-for="(ads, i) in store.ads" :key="i">
             
-            <img src="../assets/img/news1-1-300x300.png" class="card-img-top img-fluid" alt="...">
-            <p class="text-center">29.05.2022 - Football</p>
+            <img :src="ads.img" class="card-img-top img-fluid" alt="...">
+            <p class="text-center">{{ads.times}}</p>
             <div class="card-body">
-                <h5 class="card-title fw-bold">What is Football?</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title fw-bold">{{ads.name}}</h5>
+                <p class="card-text">{{ads.description}}</p>
                 <div class="d-flex justify-content-center">
                 
                     <a href="#" class="btn px-5 py-3 rounded-5 text-light bg-black"><p class="mb-0 fw-bold">More</p></a>
@@ -25,54 +29,14 @@ export default {
             </div>
         </div>
 
-        <div class="card justify-content-around" style="width: 18rem;">
-            
-            <img src="../assets/img/news3-1-300x300.png" class="card-img-top img-fluid" alt="...">
-            <p class="text-center">29.05.2022 - Football</p>
-            <div class="card-body">
-                <h5 class="card-title fw-bold">What is Football?</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <div class="d-flex justify-content-center">
-                
-                    <a href="#" class="btn px-5 py-3 rounded-5 text-light bg-black"><p class="mb-0 fw-bold">More</p></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="card justify-content-around" style="width: 18rem;">
-            
-            <img src="../assets/img/news2-1-300x300.png" class="card-img-top img-fluid" alt="...">
-            <p class="text-center">29.05.2022 - Football</p>
-            <div class="card-body">
-                <h5 class="card-title fw-bold">What is Football?</h5>
-                <p class="card-text">Some quick example text to build on the c content.</p>
-                <div class="d-flex justify-content-center">
-                
-                    <a href="#" class="btn px-5 py-3 rounded-5 text-light bg-black"><p class="mb-0 fw-bold">More</p></a>
-                </div>
-            </div>
-        </div>
-
-        <div class="card justify-content-around" style="width: 18rem;">
-            
-            <img src="../assets/img/news4-1-300x300.png" class="card-img-top img-fluid" alt="...">
-            <p class="text-center">29.05.2022 - Football</p>
-            <div class="card-body">
-                <h5 class="card-title fw-bold">What is Football?</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <div class="d-flex justify-content-center">
-                
-                    <a href="#" class="btn px-5 py-3 rounded-5 text-light bg-black"><p class="mb-0 fw-bold">More</p></a>
-                </div>
-            </div>
-        </div>
+        
     </div>
 
     <div class="d-flex container-ads-pages w-100 py-3 justify-content-center">
         <button class="page-1 "></button>
-        <button class="page-2 active"></button>
-        <button class="page-3"></button>
-        <button class="page-4"></button>
+        <button class="page-1 active"></button>
+        <button class="page-1"></button>
+        <button class="page-1"></button>
     </div>
 
 </template>
@@ -105,11 +69,13 @@ export default {
             background-color: lightcoral;
         }
         &.active{
-            background-color: cyan;
+            background-color: black;
             padding: 0 25px;
             &:hover{
                 cursor: pointer;
-                background-color: blueviolet;
+                background-color: black;
+                transform: scale(1.1);
+                border: 1px;
 
             }
         }
